@@ -55,8 +55,9 @@ Diagram 1.1 shows the count of each keyword in the pages selected by the user
 ## Diagram 1.2
 
 <img width="1095" alt="image" src="https://user-images.githubusercontent.com/71307669/190866810-7ec5d124-603b-4ced-912c-63639a025410.png">
-The Excel file will have tabs named after each keyword in the .txt file, each tab will contain all the comments that the keywords are found in (Diagram 1.2). The corresponding url is also provided for each comment, which was very important for the client, as they needed context for each comment. 
+The Excel file will have tabs named after each keyword in the .txt file, each tab will contain all the comments that the keywords are found in (Diagram 1.2). The corresponding url is also provided for each comment, which was very important for the client, as they needed context for each comment. The keywords that were not found in the comments, the keywords with count 0 in Diagram 1.1, have no tabs as there is nothing to display. 
 
 # Improvements
-
+- Could put all variables needed to be changed into one Excel document and write to that same document, so that all the data is in one file and not seperated into multiple files
+- 
 
