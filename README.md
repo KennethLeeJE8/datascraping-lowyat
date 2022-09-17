@@ -48,10 +48,12 @@ You will need to make the following files:
 
 # Final Output Format
 Diagram 1.1
+
 <img width="108" alt="image" src="https://user-images.githubusercontent.com/71307669/190866734-5ed9c62c-6948-486d-baf0-3a14c9b49cff.png">
 Diagram 1.1 shows the count of each keyword in the pages selected by the user
 
 Diagram 1.2
+
 <img width="1095" alt="image" src="https://user-images.githubusercontent.com/71307669/190866810-7ec5d124-603b-4ced-912c-63639a025410.png">
 The Excel file will have tabs named after each keyword in the .txt file, each tab will contain all the comments that the keywords are found in (Diagram 1.2). The corresponding url is also provided for each comment, which was very important for the client, as they needed context for each comment. 
 
