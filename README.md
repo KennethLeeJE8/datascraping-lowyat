@@ -23,28 +23,27 @@ These were the fields that the client requested to capture as they were crucial 
 - To find out any specific problem, such as structural defects or , customers have had during their interactions with IOI Properties Group
 
 # Data Cleaning
-- Using the Python Package, Beautiful Soup, we could extract the raw HTML from the website
+- Using the Python Package, Beautiful Soup, I extracted the raw HTML from the website
 - I further used Pandas to clean the data, implementing some NLP techniques so I could process it into a format that my clients could extract knowledge from the data collected
 
 The following changes were made to the data:
 - Sentences were split into individual words to look for keywords
-- Unneccessary characters were stripped, such as "" and @ and ,
+- Unneccessary characters were stripped, such as '""' and '@' and ','
 
 # Data Analysis
-One of the clients primary objectives with this project was to analyse the specific keywords used to describe IOI Properties Berhad and their property developments, this objective was a big influence on the design of this project. 
+One of the clients primary objectives with this project was to analyse the specific keywords used to describe IOI Properties Berhad and their property developments, this objective had a big influence over the design of the entire project. 
 
-datacleaning.py focuses on extracting comments that contain specific keywords, determined by the user, to get a general consensus of the public. 
+datascraping.py focuses on extracting comments that contain specific keywords, determined by the user, to get a general consensus of the public. 
 
 # .txt files
 To look for specific keywords, a .txt file needs to be added to the directory. This txt file should contain all the keywords you want to capture in the final output itself, the keywords should be on a seperate line each and not have any special characters seperating them. Multiple .txt files can be made to filter for category, for example, the client wanted a file with adjectives only and another file with property names, as these two files answered different objectives. 
 
 The package xlrd and xlrswriter was used to read and write to Microsoft Excel files, as this was the preferred application at IOI Properties Group
 
-# What you need to do to use this project
+# How to use this project to extract comments by keywords
 You will need to make the following files:
 - .txt files with keywords
-- add the lowyat forum URLs to data_scraping file, under all_topics variables
-- 
+- add the website URLs to data_scraping file, under all_topics variables
 
 # Final Output Format
 ## Diagram 1.1
@@ -58,6 +57,6 @@ Diagram 1.1 shows the count of each keyword in the pages selected by the user
 The Excel file will have tabs named after each keyword in the .txt file, each tab will contain all the comments that the keywords are found in (Diagram 1.2). The corresponding url is also provided for each comment, which was very important for the client, as they needed context for each comment. The keywords that were not found in the comments, the keywords with count 0 in Diagram 1.1, have no tabs as there is nothing to display. 
 
 # Future Improvements
-- Could put all variables needed to be changed into one Excel document and write to that same document, so that all the data is in one file and not seperated into multiple files
+- Have a configuration file so that all the variable information can filled out without having to change the source code
 - Use inputs by terminal to input the website urls and other information needed
 
